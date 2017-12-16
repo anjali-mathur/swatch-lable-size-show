@@ -1,0 +1,16 @@
+#use this div structure where you want to show size
+ <div class="hdasj">VERONA - <span class="add-varient"></span>MM</div>
+
+<script>
+  $(document).ready(function(){
+  //var abnja = $('.swatch_options input:checked .swatch .swatch-element label .valude ').val();
+   $('.add-varient').html($('input[name=option-1]:checked').val());   
+$('.swatch_options .swatch .swatch-element label .valude ').on('click', function() {
+  $('.add-varient').html('');
+var ifrrem = $(this).html();
+  
+$('.add-varient').append(ifrrem);
+ });
+
+   });
+</script>
